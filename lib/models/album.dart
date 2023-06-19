@@ -3,6 +3,7 @@ class Album {
   String title;
   String url;
   String thumbnailUrl;
+  bool favorite = false;
 
   Album(
       this.id,
@@ -23,6 +24,14 @@ class Album {
       'url': url,
       'thumbnailUrl': thumbnailUrl
     };
+
+    toggleFavorite() {
+      favorite = !favorite;
+    }
+
+    setFavorite(value) {
+      favorite = value;
+    }
 
   static List<Album> listFromJson(List<dynamic> json) {
     List<Album> albumList = [];
