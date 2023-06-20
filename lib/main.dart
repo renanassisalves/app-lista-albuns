@@ -1,6 +1,7 @@
 import 'package:entrega_flutter_2/providers/album_provider.dart';
 import 'package:entrega_flutter_2/routes/RoutePaths.dart';
 import 'package:entrega_flutter_2/screens/album_create_screen.dart';
+import 'package:entrega_flutter_2/screens/album_thumbchange_screen.dart';
 import 'package:entrega_flutter_2/screens/list_album_screen.dart';
 import 'package:entrega_flutter_2/screens/sign_in_screen.dart';
 import 'package:entrega_flutter_2/screens/teste.dart';
@@ -31,6 +32,7 @@ class Aplicativo extends StatelessWidget {
         RoutePaths.SIGN_IN_SCREEN: (context) => const SignInScreen(),
         RoutePaths.ALBUM_LIST_SCREEN: (context) => const AlbumListScreen(),
         RoutePaths.ALBUM_CREATE_SCREEN: (context) => const AlbumCreateScreen(),
+        RoutePaths.ALBUM_THUMBCHANGE_SCREEN: (context) => const ThumbChangeScreen(),
         RoutePaths.TESTE_SCREEN: (context) => Teste()
       },
     ),

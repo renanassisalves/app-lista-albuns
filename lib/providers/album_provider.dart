@@ -12,6 +12,15 @@ class AlbumProvider with ChangeNotifier {
  List<int> favoriteList = [];
  final uid = FirebaseAuth.instance.currentUser?.uid;
  final _albumService = AlbumsService();
+ late Album albumSelecionado;
+
+ setAlbumSelecionado(Album album) {
+  albumSelecionado = album;
+ }
+
+ Album getAlbumSelecionado() {
+  return albumSelecionado;
+ }
 
  AlbumProvider() {
   listarfavoritos().then((value) {

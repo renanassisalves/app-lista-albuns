@@ -37,7 +37,7 @@ class Album {
     List<Album> albumList = [];
     int index = 0;
     for (var element in json) {
-      if (index >= 4) {
+      if (index >= 8) {
         break;
       }
       albumList.add(Album.fromJson(element));

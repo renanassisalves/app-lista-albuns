@@ -1,5 +1,6 @@
 import 'package:entrega_flutter_2/providers/album_provider.dart';
 import 'package:entrega_flutter_2/services/album_service.dart';
+import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -19,7 +20,6 @@ class _AlbumListScreenState extends State<AlbumListScreen> {
     final albumProvider = Provider.of<AlbumProvider>(context);
     List<Widget> _generateListAlbums(List<Album> albumsList) {
       final favoriteList = albumProvider.favoriteList;
-
       albumsList.asMap().forEach((key, value) {
         if (favoriteList.contains(value.id)) {
           albumsList[key].setFavorite(true);
