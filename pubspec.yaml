@@ -43,10 +43,10 @@ dependencies:
   firebase_storage: ^11.2.2
   firebase_database: ^10.2.3
   image_picker: ^0.8.9
-  gerador_albums_pk:
+  entrega_flutter_2_package:
     git:
       url: "https://github.com/renanassisalves/entrega_flutter_2_package.git"
-      ref: main
+      ref: master
 
 dev_dependencies:
   flutter_test:
