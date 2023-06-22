@@ -16,6 +16,4 @@ class AlbumsService{
       throw Exception("Problemas ao listar álbuns");
     }
   }
-
-
 }

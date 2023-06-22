@@ -94,7 +94,8 @@ class _AlbumListItemState extends State<AlbumListItem> {
                     Navigator.of(context)
                         .pushNamed(RoutePaths.ALBUM_THUMBCHANGE_SCREEN);
                   },
-                  child: const Icon(Icons.image)),
+                  child: const Icon(Icons.image)
+              ),
             ],
           ),
         ],
