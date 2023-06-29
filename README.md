@@ -1,16 +1,17 @@
-# entrega_flutter_2
+# Aplicativo Listagem De Álbuns
+Aplicativo sem uso específico, feito para pós graduação, para aprendizado de tecnologias do Firebase, testes e melhor organização do projeto em si.
 
-flutter
+## Tecnologias utilizadas
 
-## Getting Started
+- Realtime Database
+- Firebase Authentication
+- Firebase Storage
+- Testes Unitários
+- Testes de Widgets
 
-This project is a starting point for a Flutter application.
+## Prints da aplicação:
+![Print 01](docs/print_1.png)
 
-A few resources to get you started if this is your first Flutter project:
+![Print 02](docs/print_2.png)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Print 03](docs/print_3.png)
