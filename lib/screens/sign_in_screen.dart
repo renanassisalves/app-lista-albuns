@@ -86,12 +86,13 @@ class _SignInScreenState extends State<SignInScreen> {
             TextField(
               controller: emailController,
               decoration: const InputDecoration(labelText: "E-mail"),
-
+                key: const Key("texto_email")
             ),
             TextField(
               controller: passwordController,
               obscureText: true,
               decoration: const InputDecoration(labelText: "Senha"),
+                key: const Key("texto_senha")
             ),
             isLoading
                 ? const CircularProgressIndicator()
@@ -105,6 +106,7 @@ class _SignInScreenState extends State<SignInScreen> {
                           ),
                           ),
                           child: const Text("Cadastrar"),
+                        key: const Key("botao_cadastrar"),
                       ),
                       // const SizedBox(width: 30),
                       ElevatedButton(
@@ -114,6 +116,7 @@ class _SignInScreenState extends State<SignInScreen> {
                         ),
                       ),
                         child: const Text("Login"),
+                        key: const Key("botao_login"),
                       ),
                     ],
                   ),
